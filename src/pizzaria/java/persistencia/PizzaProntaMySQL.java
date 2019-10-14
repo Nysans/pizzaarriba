@@ -50,7 +50,7 @@ public class PizzaProntaMySQL implements PizzaProntaDAO {
 		b.setID(li.get(0).toString());
 		b.setNome(li.get(1).toString());
 
-		String sql = "SELECT I.* FROM Ingrediente AS I, PizzaPronta_ingrediente AS Ponte WHERE (Ponte.PizzaPronta_id = ?) AND (I.Ingrediente_id = Ponte.Ingrediente_id)";
+		String sql = "SELECT I.* FROM Ingrediente AS I, PizzaPronta_Ingrediente AS Ponte WHERE (Ponte.PizzaPronta_id = ?) AND (I.Ingrediente_id = Ponte.Ingrediente_id)";
 		con.prepararPst(sql);
 		con.setParam(1, b.getId());
 		ArrayList<ArrayList<String>> ingrediente = con.selecionar();

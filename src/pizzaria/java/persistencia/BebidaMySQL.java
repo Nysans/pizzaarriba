@@ -56,7 +56,7 @@ public class BebidaMySQL implements BebidaDAO {
 	@Override
 	public ArrayList<Bebida> listar() throws PizzariaException {
 		ConexaoMySQL con = new ConexaoMySQL();
-		String sql = "SELECT * FROM BEBIDA ORDER BY BEBIDA_NOME";
+		String sql = "SELECT * FROM Bebida ORDER BY Bebida_nome";
 		con.prepararPst(sql);
 		ArrayList<ArrayList<String>> dados = con.selecionar();
 		con.close();

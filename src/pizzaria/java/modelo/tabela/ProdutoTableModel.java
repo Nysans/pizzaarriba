@@ -41,7 +41,7 @@ public class ProdutoTableModel extends AbstractTableModel {
             	s += dados.get(rowIndex).getNome();
             	if (dados.get(rowIndex).getClass() == Pizza.class) {
             		Pizza p = (Pizza) dados.get(rowIndex);
-            		s += p.getMassa().getNome();
+            		s += ' ' + p.getMassa().getNome();
             	}
                 return s;
             case 1:
