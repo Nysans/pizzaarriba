@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Inicio",
+            "request": "launch",
+            "mainClass": "pizzaria.java.controle.Inicio",
+            "projectName": "pizzaarriba_75dd1028"
+        }
+    ]
+}
